@@ -1,4 +1,3 @@
-ESTILOS GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body {
     background-color: hsl(225, 100%, 94%);
 }
 
-/* ESTILOS CONTAINER */
+
 .container {
     width: 100%;
     height: 100%;
@@ -118,7 +117,8 @@ body {
   }
   
   .annual-card-right a:hover {
-    color: #5735d3;
+    color: #000;
+    opacity: .2;
   }
   
   
@@ -136,6 +136,7 @@ body {
   
   #btn_change:hover {
     background-color: #5735d3;
+    opacity: .5;
   }
   
   .cancel {
@@ -187,4 +188,16 @@ body {
         margin-bottom: 1.5rem;
         padding: 0 1rem;
     }
+
+    /* Button */
+    #btn_change {
+      font-size: 1rem; /* Adjust font size as needed */
+      padding: 0.7rem 1rem; /* Adjust padding as needed */
+      margin-bottom: 1rem; /* Adjust margin as needed */
+  }
+
+  /* "Change" link */
+  .annual-card-right a {
+      font-size: 0.9rem; /* Adjust font size as needed */
+  }
 }
