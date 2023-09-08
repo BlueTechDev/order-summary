@@ -2,9 +2,9 @@
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-![Screenshot of Order Summary Card](./screenshot.jpg)
+![Screenshot of Order Summary Card](/images/order-summary.png)
 
-[Live Demo](https://your-live-site-url.com) | [Solution](https://your-solution-url.com)
+[Live Demo](order-summary-r9877gvmm-bluetechdev.vercel.app) | [Solution](https://github.com/BlueTechDev/order-summary)
 
 ## Table of Contents
 
