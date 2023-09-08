@@ -1,0 +1,190 @@
+ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+
+/* ESTILOS CONTAINER */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto; /* Set background size to 100% width and auto height */
+}
+
+
+  
+  .card-content {
+    padding: 2rem;
+  }
+
+  /* Adjust the card height to fit within the container */
+.card {
+    max-width: 350px;
+    max-height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 40px 30px -10px rgba(23, 65, 97, 0.1);
+    text-align: center;
+    transition: all .4s ease-out;
+    overflow: hidden; /* Ensure card content does not overflow */
+  }
+  
+  /* Make the image span the length of the card */
+  .card-header {
+    width: 100%;
+    height: 250px;
+    background-image: url(/images/illustration-hero.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+    transition: all .4s ease-out;
+}
+  
+  
+  .card-content h1 {
+    font-size: 1.5rem;
+    color: #192447;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content p {
+    color: #969aab;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .annual-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 1rem;
+  }
+  
+  .annual-card-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 50px;
+    margin-right: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    color: #192447;
+    margin: 0;
+  }
+  
+  .annual-plan-info {
+    text-align: left;
+  }
+  
+  p {
+    color: #192447;
+    font-weight: bold;
+  }
+  
+  .annual-card-right a {
+    color: #382ae1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .annual-card-right a:hover {
+    color: #5735d3;
+  }
+  
+  
+  #btn_change {
+    font-size: 20px;
+    padding: 20px 30px;
+    width: 100%;
+    border: solid 2px;
+    border-radius: 3px;
+    background-color: #382ae1;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btn_change:hover {
+    background-color: #5735d3;
+  }
+  
+  .cancel {
+    text-align: center;
+    color: #969aab;
+  }
+  
+  /* Adjust the styles for smaller screens (max-width: 450px) */
+@media screen and (max-width: 450px) {
+    /* Container */
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Card */
+    .card {
+        width: 95%;
+        min-width: 0;
+        height: auto;
+    }
+
+    /* Card Header Image */
+    .card-header {
+        height: 160px;
+    }
+
+    /* Card Content */
+    .card-content {
+        height: fit-content;
+        padding: 2rem 1.5rem;
+        align-items: center;
+    }
+
+    /* Card Title */
+    .card-content h1 {
+        font-size: 1.3rem;
+    }
+
+    /* Card Paragraph */
+    .card-content p {
+        width: 240px;
+        font-size: .92rem;
+    }
+
+    /* Annual Card */
+    .annual-card {
+        height: 80px;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+}
